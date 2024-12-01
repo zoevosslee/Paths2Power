@@ -63,6 +63,7 @@ map.on('load', () => {
         const popup = new mapboxgl.Popup({
           closeButton: false,
           closeOnClick: false,
+          className: 'custom-popup', // Custom class for styling
         });
 
         map.on('mouseenter', 'mongoLayer', (e) => {
@@ -71,11 +72,10 @@ map.on('load', () => {
           const coordinates = e.features[0].geometry.coordinates.slice();
           const properties = e.features[0].properties;
 
-          // Set the popup content to display the site name
+          // Set the popup content to display only the site name
           popup.setLngLat(coordinates)
             .setHTML(`
-              <h3>Site: ${properties.Site || 'Unknown Site'}</h3>
-              <p>${properties.Description || 'No additional information available.'}</p>
+              <h3>${properties.Site || 'Unknown Site'}</h3>
             `)
             .addTo(map);
         });

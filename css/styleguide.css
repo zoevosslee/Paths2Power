@@ -1,30 +1,27 @@
 :root { 
-  --alto: #d9d9d9;
   --amber: #ffbf00;
   --black: #000000;
   --cultured-pearl: #f5f5f5;
   --eerie-black: #1e1e1e;
-  --gold: #ffd000;
   --heavy-metal: #2c2c2c;
   --status-color--warning: #ffc107;
   --white: #ffffff;
  
-  --font-size-l: 26px;
+  --font-size-l: 36px;
   --font-size-m: 24px;
   --font-size-s: 20px;
-  --font-size-xl: 36px;
+  --font-size-xl: 40px;
   --font-size-xs: 16px;
-  --font-size-xxl: 40px;
-  --font-size-xxxl: 64px;
+  --font-size-xxl: 64px;
  
-  --font-family-inter-regular: "Inter-Regular", Helvetica;
-  --font-family-inter-semibold: "Inter-SemiBold", Helvetica;
+  --font-family-inter: "Inter", Helvetica;
   --font-family-montserrat: "Montserrat", Helvetica;
   --font-family-roboto: "Roboto", Helvetica;
   --font-family-roboto-medium: "Roboto-Medium", Helvetica;
+  --font-family-roboto-regular: "Roboto-Regular", Helvetica;
 }
 .body2 {
-  font-family: var(--font-family-roboto);
+  font-family: var(--font-family-roboto-regular);
   font-size: var(--font-size-xs);
   font-style: normal;
   font-weight: 400;
@@ -33,7 +30,7 @@
 
 .header {
   font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-xxxl);
+  font-size: var(--font-size-xxl);
   font-style: normal;
   font-weight: 900;
   letter-spacing: 0;
@@ -57,7 +54,7 @@
 
 .header2 {
   font-family: var(--font-family-roboto);
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-xl);
   font-style: normal;
   font-weight: 900;
   letter-spacing: 0;
@@ -65,14 +62,14 @@
 
 .header3 {
   font-family: var(--font-family-roboto);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-l);
   font-style: normal;
   font-weight: 900;
   letter-spacing: 0;
 }
 
 .single-linebody-base {
-  font-family: var(--font-family-inter-regular);
+  font-family: var(--font-family-inter);
   font-size: var(--font-size-xs);
   font-style: normal;
   font-weight: 400;
