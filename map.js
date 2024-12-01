@@ -32,7 +32,7 @@ map.addControl(nav, 'top-right');
 
 // Load GeoJSON data and add to the map
 map.on('load', () => {
-  const geojsonEndpoint = 'https://paths-to-power-zvl-4288f0734099.herokuapp.com/api/geojson';
+  const geojsonEndpoint = 'https://p2p-csc-a2d00f9ce2be.herokuapp.com/api/geojson';
 
   fetch(geojsonEndpoint)
     .then(response => response.json())
